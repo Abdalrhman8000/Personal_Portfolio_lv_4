@@ -1,0 +1,89 @@
+.contcat_form
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: end;
+}
+.contcat_form form
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-gap: 30px;
+    padding: 0 50px;
+    width: 100%;
+}
+.contcat_form form input
+{
+    border: 0;
+    outline: 0;
+    width: 300px;
+    padding: 10px 20px;
+    background-color: var(--line_color);
+    color: var(--light_color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.contcat_form form textarea
+{
+    border: 0;
+    outline: 0;
+    padding: 15px 20px;
+    background-color: var(--line_color);
+    color: var(--light_color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 300px;
+    height: 150px;
+}
+.contcat_form form button
+{
+    border: 0;
+    outline: 0;
+    padding: 10px 30px;
+    background-color: var(--main_color);
+    color: var(--light_color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 300px;
+    font-size: 1.2rem;
+    transition: all .5s ease;
+}
+.contact_image img
+{
+    width: 90%;
+}
+.contact_image
+{
+    text-align: center;
+}
+.contcat_form form button:hover
+{
+    background-color: var(--light_color);
+    color: var(--main_color);
+}
+.valid
+{
+    width: 300px;
+    background-color: var(--dark_red_color);
+    padding: 5px 20px; 
+    color: var(--light_color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    height: 0;
+    padding: 0;
+    overflow:hidden;
+}

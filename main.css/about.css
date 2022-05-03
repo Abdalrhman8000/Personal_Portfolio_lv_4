@@ -1,0 +1,174 @@
+body
+{
+    overflow-x: hidden;
+    overflow-y: auto !important;
+}
+.title_image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.info ,.skills
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-gap: 60px;
+    padding-left: 30px;
+}
+.info h1,.skills h1
+{
+    color: var(--light_color);
+    text-decoration: underline var(--main_color);
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+}
+.skills h1
+{
+    align-self: center;
+}
+.container_info
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 95%;
+    margin: auto;
+}
+.container_info p
+{
+    font-size: 1.1rem;
+    color: var(--light_color);
+}
+.container_info p font
+{
+    color: var(--main_color);
+}
+.breack
+{
+    background-color: var(--light_color);
+    height: 2px;
+    width: 50%;
+    margin: 100px auto;
+    opacity: .2;
+}
+.skills
+{
+    padding-bottom: 50px;
+}
+.container_skills
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    grid-gap: 50px;
+    margin: auto;
+    justify-items: end;
+    margin: 30px auto;
+}
+.skills .container_skills:nth-child(2)
+{
+    width: 90%;
+    justify-items: start;
+}
+.main_circle
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--line_color);
+    cursor: pointer;
+    position: relative;
+}
+.main_circle::after
+{
+    content: 'HTMl';
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    background-color: var(--main_color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+}
+.main_circle::before
+{
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    border: 10px solid;
+    border-color:transparent transparent  var(--main_color) transparent ;
+}
+.child_circle
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark_color);
+    background-color: var(--main_color);
+}
+.main_circle:hover .child_circle
+{
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+/*--------------- Skills||Content || Start ---------------*/
+.skills .cont_skill_1 .main_circle:nth-child(1)::after
+{
+    content: 'HTMl';
+}
+.skills .cont_skill_1 .main_circle:nth-child(2)::after
+{
+    content: 'Css';
+}
+.skills .cont_skill_1 .main_circle:nth-child(3)::after
+{
+    content: 'JavaScript';
+}
+/* --------- Line || 1 ------------- */
+
+.skills .cont_skill_2 .main_circle:nth-child(1)::after
+{
+    content: 'Php';
+}
+.skills .cont_skill_2 .main_circle:nth-child(2)::after
+{
+    content: 'C#';
+}
+.skills .cont_skill_2 .main_circle:nth-child(3)::after
+{
+    content: 'C++';
+}
+/* --------- Line || 2 ------------- */
+
+/*--------------- Skills||Content || End ---------------*/

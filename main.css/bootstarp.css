@@ -1,0 +1,239 @@
+@media (min-width:667px) and (max-width:992px)
+{
+    .land_info h1
+    {
+        font-size: 3rem;
+    }
+    .land_info p
+    {
+        font-size: 1rem;
+    }
+    .land_info button, .land_info a
+    {
+        padding: 10px 10px;
+        font-size: 1rem;
+    }
+    .container
+    {
+        width: 95%;
+    }
+    .links_icons
+    {
+        width: 60%;
+    }
+    .container_info
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+    .info
+    {
+        grid-gap: 20px;
+    }
+    .blog_container,.port_container
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .catogrey img
+    {
+        width: 60%;
+    }
+    .blog_container,.container_info
+    {
+        overflow-x: hidden !important;
+    }
+    .list li a
+    {
+        font-size: 2rem !important;
+    }
+}
+
+@media (min-width:200px) and (max-width:666px)
+{
+    .links_icons
+    {
+        bottom: 0;
+        width: 100% !important;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+    .blog_container,.container_info,.contcat_form
+    {
+        overflow-x: hidden !important;
+    }
+    .land_info h1
+    {
+        font-size: 2.5rem;
+        display: block;
+    }
+    .main_type 
+    {
+        height: 100px;
+    }
+    .land_info p
+    {
+        font-size: .8rem;
+    }
+    .land_info button, .land_info a
+    {
+        padding: 10px 10px;
+        font-size: .8rem;
+    }
+    .container
+    {
+        width: 90%;
+        justify-content: center;
+    }
+    .links_icons
+    {
+        width: 90%;
+    }
+    .land_images
+    {
+        display: none;
+    }
+    .container_info
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 40px;
+    }
+    .info
+    {
+        grid-gap: 40px;
+    }
+    .breack
+    {
+        width: 70%;
+    }
+    .skills .container_skills
+    {
+        width: 100%;
+        justify-items: start;
+    }
+    .container_skills
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main_circle
+    {
+        margin: 20px 0;
+    }
+    .skills
+    {
+        padding-left: 20px;
+    }
+    .blog_container,.port_container
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .catogrey img
+    {
+        width: 70%;
+    }
+    .list li a
+    {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (min-width:200px) and (max-width:992px)
+{
+    .valid
+    {
+        width: 100%;
+    }
+    .list
+    {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--line_color);
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 30px;
+        z-index: 1000;
+    }
+    .list li 
+    {
+        width: 100%;
+        height: 60px;
+        border-bottom: 1px solid var(--light_color);
+    }
+    .list li:last-child
+    {
+        border: 0;
+    }
+    .list li a
+    {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+        color: var(--light_color);
+        font-size: 2rem;
+    }
+    .fa-close
+    {
+        color: var(--light_color);
+    }
+    .list li:last-child
+    {
+        display: block;
+        position: absolute;
+        top: 2%;
+        left: 0%;
+        z-index: 100;
+        color: var(--dark_color);
+        font-size: 1.5rem;
+    }
+    .header_icons
+    {
+        display: block;
+        font-size: 1.5rem;
+        color: var(--main_color);
+    }
+    .logo img
+    {
+        max-width: 150px;
+    }
+    .mouse_circle_1,.mouse_circle_2,.mouse_move
+    {
+        display: none  !important;
+    }
+    *
+    {
+        cursor: auto !important;
+    }
+    .contact_image
+    {
+        display: none;
+    }
+    .contcat_form
+    {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        padding: 20px 0;
+    }
+    .contcat_form form
+    {
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 0;
+        margin: auto;
+        grid-gap: 20px;
+    }
+    .contcat_form form input ,
+    .contcat_form form button,
+    .contcat_form form textarea
+    {
+        width: 100%;
+    }
+}

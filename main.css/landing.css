@@ -1,0 +1,127 @@
+/*------------ Landing || Start ---------->*/
+body
+{
+    overflow: hidden;
+}
+.container
+{
+    width: 90%;
+    margin: auto;
+    height: calc(100vh - 85px);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.land_info,.land_images
+{
+    flex: 1;
+}
+.land_images
+{
+    position: relative;
+    background-color: chocolate;
+}
+.land_images img
+{
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-55%);
+    position: absolute;
+    -webkit-transform: translate(0%,-55%);
+    -moz-transform: translate(0%,-55%);
+    -ms-transform: translate(0%,-55%);
+    -o-transform: translate(0%,-55%);
+    z-index: 100;
+    width: 68%;
+}
+.land_images img:nth-child(2)
+{
+    z-index: 1;
+    width: 100%;
+    transform: translate(25%,-50%);
+    -webkit-transform: translate(25%,-50%);
+    -moz-transform: translate(25%,-50%);
+    -ms-transform: translate(25%,-50%);
+    -o-transform: translate(25%,-50%);
+}
+.land_info h1
+{
+    display: inline-block;
+    color: var(--light_color);
+    font-size: 4rem;
+}
+.land_info p
+{
+    padding: 30px 0;
+    color: var(--light_color);
+    font-size: 1.1rem;
+    line-height: 27px;
+}
+.land_btn
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-gap: 30px;
+}
+.land_info button
+{
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    background-color: var(--main_color);
+    font-size: 1.3rem;
+    color: var(--light_color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.land_info button:hover
+{
+    background-color: var(--light_color);
+    color: var(--main_color);
+}
+.land_btn button:nth-child(2)
+{
+    background-color: transparent;
+}
+.land_btn button:nth-child(2) a
+{
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color: var(--light_color);
+    color: var(--main_color);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.land_btn button:nth-child(2):hover a
+{
+    background-color: var(--main_color);
+    color: var(--light_color);
+}
+.land_info .type
+{
+    margin-left: 20px;
+    color: var(--main_color);
+}
+.type::after
+{
+   content: '';
+   width: 2px;
+   height: 100%;
+   position: absolute;
+   background-color: var(--main_color);
+   animation: opacity .4s ease forwards infinite;
+   -webkit-animation: opacity .4s ease forwards infinite;
+   display: none;
+}
+/*------------ Landing || End ---------->*/
